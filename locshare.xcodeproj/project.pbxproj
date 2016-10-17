@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2213FC430CCA110F9132AA4A /* libPods-locshare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F40DC861BB1D38A218493CD /* libPods-locshare.a */; };
+		B91E0F001DBBF3F700D0A893 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91E0EFF1DBBF3F700D0A893 /* UserTableViewCell.swift */; };
+		B91E0F021DBBFC1500D0A893 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91E0F011DBBFC1500D0A893 /* AddViewController.swift */; };
+		B91E0F041DBC35AD00D0A893 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B91E0F031DBC35AD00D0A893 /* Settings.bundle */; };
+		B962A1E61DB54F64004CD4FE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B962A1E51DB54F64004CD4FE /* MapKit.framework */; };
+		B962A1E81DB552CC004CD4FE /* LocationPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B962A1E71DB552CC004CD4FE /* LocationPublisher.swift */; };
+		B962A1EA1DB55CBF004CD4FE /* mapstogpx20161017_192313.gpx in Resources */ = {isa = PBXBuildFile; fileRef = B962A1E91DB55CBF004CD4FE /* mapstogpx20161017_192313.gpx */; };
+		B962A1EC1DB55D43004CD4FE /* mapstogpx20161017_192535.gpx in Resources */ = {isa = PBXBuildFile; fileRef = B962A1EB1DB55D43004CD4FE /* mapstogpx20161017_192535.gpx */; };
+		B9B211A11DB9704E006B217C /* CryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B211A01DB9704E006B217C /* CryptoManager.swift */; };
+		B9B211A31DB9706A006B217C /* LocationCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B211A21DB9706A006B217C /* LocationCodec.swift */; };
+		B9B211A51DBABB6B006B217C /* LocationSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B211A41DBABB6B006B217C /* LocationSubscriber.swift */; };
+		B9B211A71DBAC67B006B217C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B211A61DBAC67B006B217C /* User.swift */; };
+		B9B211A91DBBA15F006B217C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B211A81DBBA15F006B217C /* Utils.swift */; };
+		B9D456DC1DB54E9400692A77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D456DB1DB54E9400692A77 /* AppDelegate.swift */; };
+		B9D456DE1DB54E9400692A77 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D456DD1DB54E9400692A77 /* MasterViewController.swift */; };
+		B9D456E01DB54E9400692A77 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D456DF1DB54E9400692A77 /* DetailViewController.swift */; };
+		B9D456E31DB54E9400692A77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D456E11DB54E9400692A77 /* Main.storyboard */; };
+		B9D456E51DB54E9400692A77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9D456E41DB54E9400692A77 /* Assets.xcassets */; };
+		B9D456E81DB54E9400692A77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D456E61DB54E9400692A77 /* LaunchScreen.storyboard */; };
+		B9D456F31DB54E9400692A77 /* locshareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D456F21DB54E9400692A77 /* locshareTests.swift */; };
+		B9D456FE1DB54E9400692A77 /* locshareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D456FD1DB54E9400692A77 /* locshareUITests.swift */; };
+		B9FFE3601DBD5FC20094F9D2 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FFE35F1DBD5FC20094F9D2 /* InfoViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9D456EF1DB54E9400692A77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9D456D01DB54E9300692A77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9D456D71DB54E9300692A77;
+			remoteInfo = locshare;
+		};
+		B9D456FA1DB54E9400692A77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9D456D01DB54E9300692A77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9D456D71DB54E9300692A77;
+			remoteInfo = locshare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B962A1F81DB56ACF004CD4FE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7F40DC861BB1D38A218493CD /* libPods-locshare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-locshare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B91E0EFF1DBBF3F700D0A893 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		B91E0F011DBBFC1500D0A893 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		B91E0F031DBC35AD00D0A893 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		B962A1E51DB54F64004CD4FE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B962A1E71DB552CC004CD4FE /* LocationPublisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPublisher.swift; sourceTree = "<group>"; };
+		B962A1E91DB55CBF004CD4FE /* mapstogpx20161017_192313.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = mapstogpx20161017_192313.gpx; path = ../../../../../Downloads/mapstogpx20161017_192313.gpx; sourceTree = "<group>"; };
+		B962A1EB1DB55D43004CD4FE /* mapstogpx20161017_192535.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = mapstogpx20161017_192535.gpx; path = ../../../../../Downloads/mapstogpx20161017_192535.gpx; sourceTree = "<group>"; };
+		B9B2119D1DB9579C006B217C /* locshare-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "locshare-Bridging-Header.h"; sourceTree = "<group>"; };
+		B9B211A01DB9704E006B217C /* CryptoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoManager.swift; sourceTree = "<group>"; };
+		B9B211A21DB9706A006B217C /* LocationCodec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCodec.swift; sourceTree = "<group>"; };
+		B9B211A41DBABB6B006B217C /* LocationSubscriber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSubscriber.swift; sourceTree = "<group>"; };
+		B9B211A61DBAC67B006B217C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B9B211A81DBBA15F006B217C /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		B9D456D81DB54E9400692A77 /* locshare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = locshare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9D456DB1DB54E9400692A77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B9D456DD1DB54E9400692A77 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		B9D456DF1DB54E9400692A77 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B9D456E21DB54E9400692A77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9D456E41DB54E9400692A77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9D456E71DB54E9400692A77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B9D456E91DB54E9400692A77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9D456EE1DB54E9400692A77 /* locshareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = locshareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9D456F21DB54E9400692A77 /* locshareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locshareTests.swift; sourceTree = "<group>"; };
+		B9D456F41DB54E9400692A77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9D456F91DB54E9400692A77 /* locshareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = locshareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9D456FD1DB54E9400692A77 /* locshareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locshareUITests.swift; sourceTree = "<group>"; };
+		B9D456FF1DB54E9400692A77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9FFE35F1DBD5FC20094F9D2 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		C23E4FAAAA5795215609DDB2 /* Pods-locshare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-locshare.release.xcconfig"; path = "Pods/Target Support Files/Pods-locshare/Pods-locshare.release.xcconfig"; sourceTree = "<group>"; };
+		CC46C7E6A03170297D5B1036 /* Pods-locshare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-locshare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-locshare/Pods-locshare.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9D456D51DB54E9300692A77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B962A1E61DB54F64004CD4FE /* MapKit.framework in Frameworks */,
+				2213FC430CCA110F9132AA4A /* libPods-locshare.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D456EB1DB54E9400692A77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D456F61DB54E9400692A77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B962A1E41DB54F64004CD4FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B962A1E51DB54F64004CD4FE /* MapKit.framework */,
+				7F40DC861BB1D38A218493CD /* libPods-locshare.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9D456CF1DB54E9300692A77 = {
+			isa = PBXGroup;
+			children = (
+				B962A1EB1DB55D43004CD4FE /* mapstogpx20161017_192535.gpx */,
+				B962A1E91DB55CBF004CD4FE /* mapstogpx20161017_192313.gpx */,
+				B9D456DA1DB54E9400692A77 /* locshare */,
+				B9D456F11DB54E9400692A77 /* locshareTests */,
+				B9D456FC1DB54E9400692A77 /* locshareUITests */,
+				B9D456D91DB54E9400692A77 /* Products */,
+				B962A1E41DB54F64004CD4FE /* Frameworks */,
+				BE8CEA4AFDC04B7E10A253A1 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		B9D456D91DB54E9400692A77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9D456D81DB54E9400692A77 /* locshare.app */,
+				B9D456EE1DB54E9400692A77 /* locshareTests.xctest */,
+				B9D456F91DB54E9400692A77 /* locshareUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9D456DA1DB54E9400692A77 /* locshare */ = {
+			isa = PBXGroup;
+			children = (
+				B91E0F031DBC35AD00D0A893 /* Settings.bundle */,
+				B9D456DB1DB54E9400692A77 /* AppDelegate.swift */,
+				B9D456DD1DB54E9400692A77 /* MasterViewController.swift */,
+				B9D456DF1DB54E9400692A77 /* DetailViewController.swift */,
+				B91E0F011DBBFC1500D0A893 /* AddViewController.swift */,
+				B9D456E11DB54E9400692A77 /* Main.storyboard */,
+				B91E0EFF1DBBF3F700D0A893 /* UserTableViewCell.swift */,
+				B9D456E41DB54E9400692A77 /* Assets.xcassets */,
+				B9D456E61DB54E9400692A77 /* LaunchScreen.storyboard */,
+				B9D456E91DB54E9400692A77 /* Info.plist */,
+				B9FFE35F1DBD5FC20094F9D2 /* InfoViewController.swift */,
+				B962A1E71DB552CC004CD4FE /* LocationPublisher.swift */,
+				B9B211A41DBABB6B006B217C /* LocationSubscriber.swift */,
+				B9B211A81DBBA15F006B217C /* Utils.swift */,
+				B9B211A61DBAC67B006B217C /* User.swift */,
+				B9B211A21DB9706A006B217C /* LocationCodec.swift */,
+				B9B211A01DB9704E006B217C /* CryptoManager.swift */,
+				B9B2119D1DB9579C006B217C /* locshare-Bridging-Header.h */,
+			);
+			path = locshare;
+			sourceTree = "<group>";
+		};
+		B9D456F11DB54E9400692A77 /* locshareTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9D456F21DB54E9400692A77 /* locshareTests.swift */,
+				B9D456F41DB54E9400692A77 /* Info.plist */,
+			);
+			path = locshareTests;
+			sourceTree = "<group>";
+		};
+		B9D456FC1DB54E9400692A77 /* locshareUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B9D456FD1DB54E9400692A77 /* locshareUITests.swift */,
+				B9D456FF1DB54E9400692A77 /* Info.plist */,
+			);
+			path = locshareUITests;
+			sourceTree = "<group>";
+		};
+		BE8CEA4AFDC04B7E10A253A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC46C7E6A03170297D5B1036 /* Pods-locshare.debug.xcconfig */,
+				C23E4FAAAA5795215609DDB2 /* Pods-locshare.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9D456D71DB54E9300692A77 /* locshare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9D457021DB54E9400692A77 /* Build configuration list for PBXNativeTarget "locshare" */;
+			buildPhases = (
+				1BB5E3AD79D561B0EB6A68D5 /* [CP] Check Pods Manifest.lock */,
+				B9D456D41DB54E9300692A77 /* Sources */,
+				B9D456D51DB54E9300692A77 /* Frameworks */,
+				B9D456D61DB54E9300692A77 /* Resources */,
+				B962A1F81DB56ACF004CD4FE /* Embed Frameworks */,
+				68CD7CADE616991145F89B9F /* [CP] Embed Pods Frameworks */,
+				4482470C74CF0B434A64C841 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = locshare;
+			productName = locshare;
+			productReference = B9D456D81DB54E9400692A77 /* locshare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9D456ED1DB54E9400692A77 /* locshareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9D457051DB54E9400692A77 /* Build configuration list for PBXNativeTarget "locshareTests" */;
+			buildPhases = (
+				B9D456EA1DB54E9400692A77 /* Sources */,
+				B9D456EB1DB54E9400692A77 /* Frameworks */,
+				B9D456EC1DB54E9400692A77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9D456F01DB54E9400692A77 /* PBXTargetDependency */,
+			);
+			name = locshareTests;
+			productName = locshareTests;
+			productReference = B9D456EE1DB54E9400692A77 /* locshareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B9D456F81DB54E9400692A77 /* locshareUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9D457081DB54E9400692A77 /* Build configuration list for PBXNativeTarget "locshareUITests" */;
+			buildPhases = (
+				B9D456F51DB54E9400692A77 /* Sources */,
+				B9D456F61DB54E9400692A77 /* Frameworks */,
+				B9D456F71DB54E9400692A77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9D456FB1DB54E9400692A77 /* PBXTargetDependency */,
+			);
+			name = locshareUITests;
+			productName = locshareUITests;
+			productReference = B9D456F91DB54E9400692A77 /* locshareUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9D456D01DB54E9300692A77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Kenny Levinsen";
+				TargetAttributes = {
+					B9D456D71DB54E9300692A77 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = J6V94XC6HC;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					B9D456ED1DB54E9400692A77 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B9D456D71DB54E9300692A77;
+					};
+					B9D456F81DB54E9400692A77 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B9D456D71DB54E9300692A77;
+					};
+				};
+			};
+			buildConfigurationList = B9D456D31DB54E9300692A77 /* Build configuration list for PBXProject "locshare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9D456CF1DB54E9300692A77;
+			productRefGroup = B9D456D91DB54E9400692A77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9D456D71DB54E9300692A77 /* locshare */,
+				B9D456ED1DB54E9400692A77 /* locshareTests */,
+				B9D456F81DB54E9400692A77 /* locshareUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9D456D61DB54E9300692A77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B962A1EC1DB55D43004CD4FE /* mapstogpx20161017_192535.gpx in Resources */,
+				B962A1EA1DB55CBF004CD4FE /* mapstogpx20161017_192313.gpx in Resources */,
+				B9D456E81DB54E9400692A77 /* LaunchScreen.storyboard in Resources */,
+				B9D456E51DB54E9400692A77 /* Assets.xcassets in Resources */,
+				B91E0F041DBC35AD00D0A893 /* Settings.bundle in Resources */,
+				B9D456E31DB54E9400692A77 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D456EC1DB54E9400692A77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D456F71DB54E9400692A77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BB5E3AD79D561B0EB6A68D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4482470C74CF0B434A64C841 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-locshare/Pods-locshare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68CD7CADE616991145F89B9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-locshare/Pods-locshare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9D456D41DB54E9300692A77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9D456E01DB54E9400692A77 /* DetailViewController.swift in Sources */,
+				B962A1E81DB552CC004CD4FE /* LocationPublisher.swift in Sources */,
+				B9B211A91DBBA15F006B217C /* Utils.swift in Sources */,
+				B91E0F021DBBFC1500D0A893 /* AddViewController.swift in Sources */,
+				B9B211A11DB9704E006B217C /* CryptoManager.swift in Sources */,
+				B91E0F001DBBF3F700D0A893 /* UserTableViewCell.swift in Sources */,
+				B9D456DE1DB54E9400692A77 /* MasterViewController.swift in Sources */,
+				B9B211A71DBAC67B006B217C /* User.swift in Sources */,
+				B9D456DC1DB54E9400692A77 /* AppDelegate.swift in Sources */,
+				B9B211A51DBABB6B006B217C /* LocationSubscriber.swift in Sources */,
+				B9FFE3601DBD5FC20094F9D2 /* InfoViewController.swift in Sources */,
+				B9B211A31DB9706A006B217C /* LocationCodec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D456EA1DB54E9400692A77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9D456F31DB54E9400692A77 /* locshareTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D456F51DB54E9400692A77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9D456FE1DB54E9400692A77 /* locshareUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9D456F01DB54E9400692A77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9D456D71DB54E9300692A77 /* locshare */;
+			targetProxy = B9D456EF1DB54E9400692A77 /* PBXContainerItemProxy */;
+		};
+		B9D456FB1DB54E9400692A77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9D456D71DB54E9300692A77 /* locshare */;
+			targetProxy = B9D456FA1DB54E9400692A77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B9D456E11DB54E9400692A77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9D456E21DB54E9400692A77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B9D456E61DB54E9400692A77 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9D456E71DB54E9400692A77 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9D457001DB54E9400692A77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B9D457011DB54E9400692A77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9D457031DB54E9400692A77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC46C7E6A03170297D5B1036 /* Pods-locshare.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = J6V94XC6HC;
+				INFOPLIST_FILE = locshare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wtf.kl.locshare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "locshare/locshare-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B9D457041DB54E9400692A77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C23E4FAAAA5795215609DDB2 /* Pods-locshare.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = J6V94XC6HC;
+				INFOPLIST_FILE = locshare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wtf.kl.locshare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "locshare/locshare-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B9D457061DB54E9400692A77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = locshareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wtf.kl.locshareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/locshare.app/locshare";
+			};
+			name = Debug;
+		};
+		B9D457071DB54E9400692A77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = locshareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wtf.kl.locshareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/locshare.app/locshare";
+			};
+			name = Release;
+		};
+		B9D457091DB54E9400692A77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = locshareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wtf.kl.locshareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = locshare;
+			};
+			name = Debug;
+		};
+		B9D4570A1DB54E9400692A77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = locshareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wtf.kl.locshareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = locshare;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9D456D31DB54E9300692A77 /* Build configuration list for PBXProject "locshare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9D457001DB54E9400692A77 /* Debug */,
+				B9D457011DB54E9400692A77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9D457021DB54E9400692A77 /* Build configuration list for PBXNativeTarget "locshare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9D457031DB54E9400692A77 /* Debug */,
+				B9D457041DB54E9400692A77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9D457051DB54E9400692A77 /* Build configuration list for PBXNativeTarget "locshareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9D457061DB54E9400692A77 /* Debug */,
+				B9D457071DB54E9400692A77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9D457081DB54E9400692A77 /* Build configuration list for PBXNativeTarget "locshareUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9D457091DB54E9400692A77 /* Debug */,
+				B9D4570A1DB54E9400692A77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9D456D01DB54E9300692A77 /* Project object */;
+}
