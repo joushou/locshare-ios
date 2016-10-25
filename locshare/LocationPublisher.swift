@@ -98,9 +98,14 @@ class LocationPublisher : NSObject, CoreLocation.CLLocationManagerDelegate {
         lastLocation = locations.last
         DispatchQueue.global().async {
             let defaults = UserDefaults.standard
-            let ip_address = defaults.string(forKey: "server_preference")!
+            let ip_address = defaults.string(forKey: "server_preference")
             let port = defaults.integer(forKey: "port_preference")
-            self.connect(ip_address: ip_address, port: port)
+
+            if (ip_address == nil || port == 0) {
+                return
+            }
+
+            self.connect(ip_address: ip_address!, port: port)
 
             var str = ""
 
