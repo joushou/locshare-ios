@@ -12,39 +12,39 @@ import CoreLocation
 var lastLocation : CLLocation?
 
 class LocationPublisher : NSObject, CoreLocation.CLLocationManagerDelegate {
-    var inputStream:InputStream!
-    var outputStream:OutputStream!
-    var locationManager:CLLocationManager!
+    var inputStream:InputStream?
+    var outputStream:OutputStream?
+    var locationManager:CLLocationManager?
+
+    func setupLocationManager() {
+        if locationManager != nil {
+            return
+        }
+
+        let locmgr = CLLocationManager()
+        locmgr.delegate = self
+        locmgr.requestAlwaysAuthorization()
+        locmgr.pausesLocationUpdatesAutomatically = true
+        locmgr.activityType = CoreLocation.CLActivityType.other
+        locmgr.allowsBackgroundLocationUpdates = true
+        locmgr.desiredAccuracy = kCLLocationAccuracyKilometer
+        locmgr.distanceFilter = 50
+        locationManager = locmgr
+    }
 
     func startBackgroundLocationUpdates() {
-        // Create a location manager object
-        self.locationManager = CLLocationManager()
-
-        // Set the delegate
-        self.locationManager.delegate = self
-
-        // Request location authorization
-        self.locationManager.requestAlwaysAuthorization()
-
-        // Set an accuracy level. The higher, the better for energy.
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers
-
-        // Enable automatic pausing
-        self.locationManager.pausesLocationUpdatesAutomatically = true
-
-        // Specify the type of activity your app is currently performing
-        self.locationManager.activityType = CoreLocation.CLActivityType.other;
-
-        // Enable background location updates
-        self.locationManager.allowsBackgroundLocationUpdates = true
-
-        self.locationManager.distanceFilter = 50
-
-        // Start location updates
-        self.locationManager.startUpdatingLocation()
-        self.locationManager.startMonitoringSignificantLocationChanges()
-
+        setupLocationManager()
+        self.locationManager?.startUpdatingLocation()
+        self.locationManager?.startMonitoringSignificantLocationChanges()
     }
+
+
+    func monitorSignificantChanges() {
+        setupLocationManager()
+        locationManager?.stopUpdatingLocation()
+        locationManager?.startMonitoringSignificantLocationChanges()
+    }
+
 
     func connect(ip_address: String, port: Int) {
         var readStream: Unmanaged<CFReadStream>?
@@ -64,49 +64,43 @@ class LocationPublisher : NSObject, CoreLocation.CLLocationManagerDelegate {
     }
 
     func push(_ string: String, encoding: String.Encoding = String.Encoding.utf8) -> Int {
-        if let data = string.data(using: encoding, allowLossyConversion: false) {
-            var bytesRemaining = data.count
-            var totalBytesWritten = 0
+        if let outputStream = outputStream {
+            if let data = string.data(using: encoding, allowLossyConversion: false) {
+                var bytesRemaining = data.count
+                var totalBytesWritten = 0
 
-            while bytesRemaining > 0 {
-                let bytesWritten = data.withUnsafeBytes {
-                    outputStream.write(
-                        $0.advanced(by: totalBytesWritten),
-                        maxLength: bytesRemaining
-                    )
-                }
-                if bytesWritten < 0 {
-                    return -1
-                } else if bytesWritten == 0 {
-                    return totalBytesWritten
+                while bytesRemaining > 0 {
+                    let bytesWritten = data.withUnsafeBytes {
+                        outputStream.write(
+                            $0.advanced(by: totalBytesWritten),
+                            maxLength: bytesRemaining
+                        )
+                    }
+                    if bytesWritten < 0 {
+                        return -1
+                    } else if bytesWritten == 0 {
+                        return totalBytesWritten
+                    }
+
+                    bytesRemaining -= bytesWritten
+                    totalBytesWritten += bytesWritten
                 }
 
-                bytesRemaining -= bytesWritten
-                totalBytesWritten += bytesWritten
+                return totalBytesWritten
             }
-
-            return totalBytesWritten
         }
 
         return -1
     }
 
-    func monitorSignificantChanges() {
-        self.locationManager.stopUpdatingLocation()
-        self.locationManager.startMonitoringSignificantLocationChanges()
-    }
-
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        self.locationManager.startMonitoringSignificantLocationChanges()
+        locationManager?.startMonitoringSignificantLocationChanges()
         lastLocation = locations.last
         DispatchQueue.global().async {
             let defaults = UserDefaults.standard
             let ip_address = defaults.string(forKey: "server_preference")!
             let port = defaults.integer(forKey: "port_preference")
             self.connect(ip_address: ip_address, port: port)
-
-            // Perform location-based activity
-            NSLog("--- locations = \(locations)\n")
 
             var str = ""
 
@@ -127,5 +121,4 @@ class LocationPublisher : NSObject, CoreLocation.CLLocationManagerDelegate {
             self.close()
         }
     }
-
 }

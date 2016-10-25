@@ -172,12 +172,14 @@ class MasterViewController: UITableViewController {
         refresh()
 
         let defaults = UserDefaults.standard
-        let ip_address = defaults.string(forKey: "server_preference")!
+        let ip_address = defaults.string(forKey: "server_preference")
         let port = defaults.integer(forKey: "port_preference")
 
-        locationSubscriber = LocationSubscriber(ip_address: ip_address, port: port, notifier: update)
+        if (ip_address != nil && port != 0) {
+            locationSubscriber = LocationSubscriber(ip_address: ip_address!, port: port, notifier: update)
+            _ = Users.map { (uuid, user) in self.locationSubscriber?.subscribe(uuid: uuid) }
+        }
 
-        _ = Users.map { (uuid, user) in self.locationSubscriber?.subscribe(uuid: uuid) }
         super.viewWillAppear(animated)
     }
 

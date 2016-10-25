@@ -92,7 +92,6 @@ class LocationSubscriber : NSObject, StreamDelegate {
 
     func subscribe(uuid: String) { _ = push("sub " + uuid + "\n") }
 
-
     func handleMsg(_ data: Data) {
         var s = String(data: data, encoding: String.Encoding.utf8)
         var parts = s?.characters.split { $0 == " " }.map(String.init)
@@ -107,7 +106,6 @@ class LocationSubscriber : NSObject, StreamDelegate {
         if user != nil {
             let plain_text = decryptWithCurve25519PrivateKey(cipher_text: msg, private_key: user!.localPrivKey)
             let location = CLLocation(marshalledData: plain_text!)
-            NSLog("Updating \(uuid) with \(location)")
             user!.addLocation(location: location)
             if let notifier = notifier {
                 notifier(uuid)

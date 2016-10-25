@@ -22,12 +22,14 @@ class DetailViewController: UIViewController {
         // Update the user interface for the detail item.
         if let detail = self.detailItem {
             let defaults = UserDefaults.standard
-            let ip_address = defaults.string(forKey: "server_preference")!
+            let ip_address = defaults.string(forKey: "server_preference")
             let port = defaults.integer(forKey: "port_preference")
 
-            if locationSubscriber == nil {
-                self.locationSubscriber = LocationSubscriber(ip_address: ip_address, port: port, notifier: self.update)
-                self.locationSubscriber?.subscribe(uuid: detail.user.uuid)
+            if (ip_address != nil && port != 0) {
+                if locationSubscriber == nil {
+                    self.locationSubscriber = LocationSubscriber(ip_address: ip_address!, port: port, notifier: self.update)
+                    self.locationSubscriber?.subscribe(uuid: detail.user.uuid)
+                }
             }
 
             update(detail.user.uuid)
@@ -42,16 +44,26 @@ class DetailViewController: UIViewController {
 
         if let map = self.mapView {
             if let location = user!.getLastLocation() {
-                if let annotation = annotation {
-                    map.removeAnnotation(annotation)
+                var old = false
+                if annotation != nil {
+                    map.removeAnnotation(annotation!)
+                    old = true
                 }
+
                 annotation = MKPointAnnotation()
 
                 annotation!.coordinate = location.coordinate
                 annotation!.title = user!.name
-                map.setCamera(MKMapCamera(lookingAtCenter: location.coordinate, fromDistance: 2000, pitch: 0, heading: 0), animated: false)
+                if old {
+                    map.setCenter(location.coordinate, animated: true)
+                } else {
+                    map.setCamera(MKMapCamera(lookingAtCenter: location.coordinate, fromDistance: 2000, pitch: 0, heading: 0), animated: false)
+                }
+                map.isZoomEnabled = true
                 map.showsUserLocation = true
                 map.addAnnotation(annotation!)
+                map.showsScale = true
+                map.showsCompass = true
             }
         }
     }
