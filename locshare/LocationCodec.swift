@@ -9,34 +9,6 @@
 import CoreLocation
 import Foundation
 
-func binarytotype <T> (_ value: [UInt8], _: T.Type) -> T {
-    return value.withUnsafeBufferPointer {
-        $0.baseAddress!
-            .withMemoryRebound(to: T.self, capacity: 1) {
-                $0.pointee
-        }
-    }
-}
-
-func binarytotype <T> (_ value: ArraySlice<UInt8>, _: T.Type) -> T {
-    return value.withUnsafeBufferPointer {
-        $0.baseAddress!
-            .withMemoryRebound(to: T.self, capacity: 1) {
-                $0.pointee
-        }
-    }
-}
-
-func typetobinary <T> (_ value: T) -> [UInt8] {
-    var mv : T = value
-    let s : Int = MemoryLayout<T>.size
-    return withUnsafePointer(to: &mv) {
-        $0.withMemoryRebound(to: UInt8.self, capacity: s) {
-            Array(UnsafeBufferPointer(start: $0, count: s))
-        }
-    }
-}
-
 extension CLPlacemark {
     var singleLine : String {
         var locationStr = ""
@@ -80,16 +52,17 @@ extension CLLocationCoordinate2D {
 
 extension CLLocation {
     func marshalledData() -> Data {
-        var arr = [UInt8]()
-        arr.append(contentsOf: typetobinary((self.timestamp.timeIntervalSince1970*1000).bitPattern.bigEndian))
-        arr.append(contentsOf: typetobinary((self.horizontalAccuracy).bitPattern.bigEndian))
-        arr.append(contentsOf: typetobinary((self.coordinate.latitude).bitPattern.bigEndian))
-        arr.append(contentsOf: typetobinary((self.coordinate.longitude).bitPattern.bigEndian))
-        arr.append(contentsOf: typetobinary((self.altitude).bitPattern.bigEndian))
-        arr.append(contentsOf: typetobinary((self.course).bitPattern.bigEndian))
-        arr.append(contentsOf: typetobinary((self.speed).bitPattern.bigEndian))
+        var buf = Data()
 
-        return Data(bytes: arr)
+        buf.append(typetobinary((self.timestamp.timeIntervalSince1970*1000).bitPattern.bigEndian))
+        buf.append(typetobinary((self.horizontalAccuracy).bitPattern.bigEndian))
+        buf.append(typetobinary((self.coordinate.latitude).bitPattern.bigEndian))
+        buf.append(typetobinary((self.coordinate.longitude).bitPattern.bigEndian))
+        buf.append(typetobinary((self.altitude).bitPattern.bigEndian))
+        buf.append(typetobinary((self.course).bitPattern.bigEndian))
+        buf.append(typetobinary((self.speed).bitPattern.bigEndian))
+
+        return buf
     }
 
     convenience init(marshalledData: Data) {

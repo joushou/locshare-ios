@@ -7,19 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2213FC430CCA110F9132AA4A /* libPods-locshare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F40DC861BB1D38A218493CD /* libPods-locshare.a */; };
+		6E6044C5DE1422819B8405DA /* Pods_locshare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7774D04AB8D2FDEB912313A /* Pods_locshare.framework */; };
 		B91E0F001DBBF3F700D0A893 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91E0EFF1DBBF3F700D0A893 /* UserTableViewCell.swift */; };
 		B91E0F021DBBFC1500D0A893 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91E0F011DBBFC1500D0A893 /* AddViewController.swift */; };
 		B91E0F041DBC35AD00D0A893 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B91E0F031DBC35AD00D0A893 /* Settings.bundle */; };
+		B957ECDD1DC1BB7700FF613B /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957ECDC1DC1BB7700FF613B /* EditViewController.swift */; };
 		B962A1E61DB54F64004CD4FE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B962A1E51DB54F64004CD4FE /* MapKit.framework */; };
 		B962A1E81DB552CC004CD4FE /* LocationPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B962A1E71DB552CC004CD4FE /* LocationPublisher.swift */; };
 		B962A1EA1DB55CBF004CD4FE /* mapstogpx20161017_192313.gpx in Resources */ = {isa = PBXBuildFile; fileRef = B962A1E91DB55CBF004CD4FE /* mapstogpx20161017_192313.gpx */; };
 		B962A1EC1DB55D43004CD4FE /* mapstogpx20161017_192535.gpx in Resources */ = {isa = PBXBuildFile; fileRef = B962A1EB1DB55D43004CD4FE /* mapstogpx20161017_192535.gpx */; };
-		B9B211A11DB9704E006B217C /* CryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B211A01DB9704E006B217C /* CryptoManager.swift */; };
+		B96849A11DE8D32B002ED3FC /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96849A01DE8D32B002ED3FC /* Storage.swift */; };
+		B96849A51DE8E69A002ED3FC /* Tester.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96849A41DE8E69A002ED3FC /* Tester.swift */; };
+		B96849A71DE99542002ED3FC /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96849A61DE99542002ED3FC /* Client.swift */; };
 		B9B211A31DB9706A006B217C /* LocationCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B211A21DB9706A006B217C /* LocationCodec.swift */; };
-		B9B211A51DBABB6B006B217C /* LocationSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B211A41DBABB6B006B217C /* LocationSubscriber.swift */; };
 		B9B211A71DBAC67B006B217C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B211A61DBAC67B006B217C /* User.swift */; };
-		B9B211A91DBBA15F006B217C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B211A81DBBA15F006B217C /* Utils.swift */; };
 		B9D456DC1DB54E9400692A77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D456DB1DB54E9400692A77 /* AppDelegate.swift */; };
 		B9D456DE1DB54E9400692A77 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D456DD1DB54E9400692A77 /* MasterViewController.swift */; };
 		B9D456E01DB54E9400692A77 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D456DF1DB54E9400692A77 /* DetailViewController.swift */; };
@@ -28,6 +29,12 @@
 		B9D456E81DB54E9400692A77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D456E61DB54E9400692A77 /* LaunchScreen.storyboard */; };
 		B9D456F31DB54E9400692A77 /* locshareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D456F21DB54E9400692A77 /* locshareTests.swift */; };
 		B9D456FE1DB54E9400692A77 /* locshareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D456FD1DB54E9400692A77 /* locshareUITests.swift */; };
+		B9F1FB861DE9DA9E00BD4C3D /* EC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F1FB801DE9DA9E00BD4C3D /* EC.swift */; };
+		B9F1FB871DE9DA9E00BD4C3D /* HKDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F1FB811DE9DA9E00BD4C3D /* HKDF.swift */; };
+		B9F1FB881DE9DA9E00BD4C3D /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F1FB821DE9DA9E00BD4C3D /* Keys.swift */; };
+		B9F1FB891DE9DA9E00BD4C3D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F1FB831DE9DA9E00BD4C3D /* Message.swift */; };
+		B9F1FB8A1DE9DA9E00BD4C3D /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F1FB841DE9DA9E00BD4C3D /* Session.swift */; };
+		B9F1FB8B1DE9DA9E00BD4C3D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F1FB851DE9DA9E00BD4C3D /* Utils.swift */; };
 		B9FFE3601DBD5FC20094F9D2 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FFE35F1DBD5FC20094F9D2 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,20 +69,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7F40DC861BB1D38A218493CD /* libPods-locshare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-locshare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B91E0EFF1DBBF3F700D0A893 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		B91E0F011DBBFC1500D0A893 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		B91E0F031DBC35AD00D0A893 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		B957ECDC1DC1BB7700FF613B /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		B962A1E51DB54F64004CD4FE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B962A1E71DB552CC004CD4FE /* LocationPublisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPublisher.swift; sourceTree = "<group>"; };
 		B962A1E91DB55CBF004CD4FE /* mapstogpx20161017_192313.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = mapstogpx20161017_192313.gpx; path = ../../../../../Downloads/mapstogpx20161017_192313.gpx; sourceTree = "<group>"; };
 		B962A1EB1DB55D43004CD4FE /* mapstogpx20161017_192535.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = mapstogpx20161017_192535.gpx; path = ../../../../../Downloads/mapstogpx20161017_192535.gpx; sourceTree = "<group>"; };
+		B96849A01DE8D32B002ED3FC /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		B96849A41DE8E69A002ED3FC /* Tester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tester.swift; sourceTree = "<group>"; };
+		B96849A61DE99542002ED3FC /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		B9B2119D1DB9579C006B217C /* locshare-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "locshare-Bridging-Header.h"; sourceTree = "<group>"; };
-		B9B211A01DB9704E006B217C /* CryptoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoManager.swift; sourceTree = "<group>"; };
 		B9B211A21DB9706A006B217C /* LocationCodec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCodec.swift; sourceTree = "<group>"; };
-		B9B211A41DBABB6B006B217C /* LocationSubscriber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSubscriber.swift; sourceTree = "<group>"; };
 		B9B211A61DBAC67B006B217C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		B9B211A81DBBA15F006B217C /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		B9D456D81DB54E9400692A77 /* locshare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = locshare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D456DB1DB54E9400692A77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9D456DD1DB54E9400692A77 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -90,9 +97,16 @@
 		B9D456F91DB54E9400692A77 /* locshareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = locshareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D456FD1DB54E9400692A77 /* locshareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locshareUITests.swift; sourceTree = "<group>"; };
 		B9D456FF1DB54E9400692A77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9F1FB801DE9DA9E00BD4C3D /* EC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EC.swift; path = crypto/EC.swift; sourceTree = "<group>"; };
+		B9F1FB811DE9DA9E00BD4C3D /* HKDF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HKDF.swift; path = crypto/HKDF.swift; sourceTree = "<group>"; };
+		B9F1FB821DE9DA9E00BD4C3D /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keys.swift; path = crypto/Keys.swift; sourceTree = "<group>"; };
+		B9F1FB831DE9DA9E00BD4C3D /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Message.swift; path = crypto/Message.swift; sourceTree = "<group>"; };
+		B9F1FB841DE9DA9E00BD4C3D /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Session.swift; path = crypto/Session.swift; sourceTree = "<group>"; };
+		B9F1FB851DE9DA9E00BD4C3D /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = crypto/Utils.swift; sourceTree = "<group>"; };
 		B9FFE35F1DBD5FC20094F9D2 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		C23E4FAAAA5795215609DDB2 /* Pods-locshare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-locshare.release.xcconfig"; path = "Pods/Target Support Files/Pods-locshare/Pods-locshare.release.xcconfig"; sourceTree = "<group>"; };
 		CC46C7E6A03170297D5B1036 /* Pods-locshare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-locshare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-locshare/Pods-locshare.debug.xcconfig"; sourceTree = "<group>"; };
+		D7774D04AB8D2FDEB912313A /* Pods_locshare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_locshare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +115,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B962A1E61DB54F64004CD4FE /* MapKit.framework in Frameworks */,
-				2213FC430CCA110F9132AA4A /* libPods-locshare.a in Frameworks */,
+				6E6044C5DE1422819B8405DA /* Pods_locshare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				B962A1E51DB54F64004CD4FE /* MapKit.framework */,
-				7F40DC861BB1D38A218493CD /* libPods-locshare.a */,
+				D7774D04AB8D2FDEB912313A /* Pods_locshare.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -158,23 +172,21 @@
 		B9D456DA1DB54E9400692A77 /* locshare */ = {
 			isa = PBXGroup;
 			children = (
+				B9F1FB8E1DE9DADD00BD4C3D /* view controllers */,
+				B9F1FB8C1DE9DAA600BD4C3D /* crypto */,
 				B91E0F031DBC35AD00D0A893 /* Settings.bundle */,
 				B9D456DB1DB54E9400692A77 /* AppDelegate.swift */,
-				B9D456DD1DB54E9400692A77 /* MasterViewController.swift */,
-				B9D456DF1DB54E9400692A77 /* DetailViewController.swift */,
-				B91E0F011DBBFC1500D0A893 /* AddViewController.swift */,
+				B96849A01DE8D32B002ED3FC /* Storage.swift */,
 				B9D456E11DB54E9400692A77 /* Main.storyboard */,
 				B91E0EFF1DBBF3F700D0A893 /* UserTableViewCell.swift */,
+				B96849A41DE8E69A002ED3FC /* Tester.swift */,
 				B9D456E41DB54E9400692A77 /* Assets.xcassets */,
 				B9D456E61DB54E9400692A77 /* LaunchScreen.storyboard */,
 				B9D456E91DB54E9400692A77 /* Info.plist */,
-				B9FFE35F1DBD5FC20094F9D2 /* InfoViewController.swift */,
 				B962A1E71DB552CC004CD4FE /* LocationPublisher.swift */,
-				B9B211A41DBABB6B006B217C /* LocationSubscriber.swift */,
-				B9B211A81DBBA15F006B217C /* Utils.swift */,
 				B9B211A61DBAC67B006B217C /* User.swift */,
+				B96849A61DE99542002ED3FC /* Client.swift */,
 				B9B211A21DB9706A006B217C /* LocationCodec.swift */,
-				B9B211A01DB9704E006B217C /* CryptoManager.swift */,
 				B9B2119D1DB9579C006B217C /* locshare-Bridging-Header.h */,
 			);
 			path = locshare;
@@ -196,6 +208,31 @@
 				B9D456FF1DB54E9400692A77 /* Info.plist */,
 			);
 			path = locshareUITests;
+			sourceTree = "<group>";
+		};
+		B9F1FB8C1DE9DAA600BD4C3D /* crypto */ = {
+			isa = PBXGroup;
+			children = (
+				B9F1FB801DE9DA9E00BD4C3D /* EC.swift */,
+				B9F1FB811DE9DA9E00BD4C3D /* HKDF.swift */,
+				B9F1FB821DE9DA9E00BD4C3D /* Keys.swift */,
+				B9F1FB831DE9DA9E00BD4C3D /* Message.swift */,
+				B9F1FB841DE9DA9E00BD4C3D /* Session.swift */,
+				B9F1FB851DE9DA9E00BD4C3D /* Utils.swift */,
+			);
+			name = crypto;
+			sourceTree = "<group>";
+		};
+		B9F1FB8E1DE9DADD00BD4C3D /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B9D456DD1DB54E9400692A77 /* MasterViewController.swift */,
+				B9D456DF1DB54E9400692A77 /* DetailViewController.swift */,
+				B91E0F011DBBFC1500D0A893 /* AddViewController.swift */,
+				B957ECDC1DC1BB7700FF613B /* EditViewController.swift */,
+				B9FFE35F1DBD5FC20094F9D2 /* InfoViewController.swift */,
+			);
+			name = "view controllers";
 			sourceTree = "<group>";
 		};
 		BE8CEA4AFDC04B7E10A253A1 /* Pods */ = {
@@ -406,17 +443,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B957ECDD1DC1BB7700FF613B /* EditViewController.swift in Sources */,
+				B9F1FB881DE9DA9E00BD4C3D /* Keys.swift in Sources */,
 				B9D456E01DB54E9400692A77 /* DetailViewController.swift in Sources */,
+				B9F1FB891DE9DA9E00BD4C3D /* Message.swift in Sources */,
+				B96849A11DE8D32B002ED3FC /* Storage.swift in Sources */,
 				B962A1E81DB552CC004CD4FE /* LocationPublisher.swift in Sources */,
-				B9B211A91DBBA15F006B217C /* Utils.swift in Sources */,
+				B96849A51DE8E69A002ED3FC /* Tester.swift in Sources */,
 				B91E0F021DBBFC1500D0A893 /* AddViewController.swift in Sources */,
-				B9B211A11DB9704E006B217C /* CryptoManager.swift in Sources */,
+				B9F1FB8A1DE9DA9E00BD4C3D /* Session.swift in Sources */,
+				B96849A71DE99542002ED3FC /* Client.swift in Sources */,
 				B91E0F001DBBF3F700D0A893 /* UserTableViewCell.swift in Sources */,
 				B9D456DE1DB54E9400692A77 /* MasterViewController.swift in Sources */,
 				B9B211A71DBAC67B006B217C /* User.swift in Sources */,
 				B9D456DC1DB54E9400692A77 /* AppDelegate.swift in Sources */,
-				B9B211A51DBABB6B006B217C /* LocationSubscriber.swift in Sources */,
+				B9F1FB861DE9DA9E00BD4C3D /* EC.swift in Sources */,
 				B9FFE3601DBD5FC20094F9D2 /* InfoViewController.swift in Sources */,
+				B9F1FB871DE9DA9E00BD4C3D /* HKDF.swift in Sources */,
+				B9F1FB8B1DE9DA9E00BD4C3D /* Utils.swift in Sources */,
 				B9B211A31DB9706A006B217C /* LocationCodec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
